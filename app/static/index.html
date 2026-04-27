@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A.R.C.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div id="app">
+
+    <!-- Header -->
+    <header id="header">
+      <div id="header-content">
+        <h1 id="arc-title">A.R.C.</h1>
+        <p id="arc-subtitle">Adaptive Reasoning Core</p>
+      </div>
+      <button id="clear-btn" title="Clear conversation">Clear</button>
+    </header>
+
+    <!-- Messages -->
+    <main id="messages-container">
+      <div id="messages"></div>
+
+      <div id="typing-indicator" class="hidden">
+        <div class="message assistant" style="max-width:unset">
+          <div class="message-label">ARC</div>
+          <div class="ai-bubble typing">
+            "dot"></span>
+            "dot"></span>
+            "dot"></span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Input -->
+    <footer id="input-area">
+      <div id="input-wrapper">
+        <textarea
+          id="message-input"
+          placeholder="Message ARC…"
+          rows="1"
+          autofocus
+        ></textarea>
+        <button id="send-btn" disabled title="Send (Enter)">
+          <!-- Arrow-right icon -->
+          <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.5 7.5H13.5M13.5 7.5L8.5 2.5M13.5 7.5L8.5 12.5"
+              stroke="currentColor" stroke-width="1.6"
+              stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+      <p id="input-hint">Enter to send&nbsp;&nbsp;·&nbsp;&nbsp;Shift+Enter for new line</p>
+    </footer>
+
+  </div>
+
+  <!-- marked.js for markdown rendering -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="/static/script.js"></script>
+</body>
+</html>
+ 
