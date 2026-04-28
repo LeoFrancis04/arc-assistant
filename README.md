@@ -50,7 +50,7 @@ ollama serve                 # keep this terminal open
 #      ↑ use host.docker.internal so the container can reach the host's Ollama
 
 # 4. Rebuild and run
-docker-compose up --build
+docker compose up --build
 ```
 
 > **Note:** `host.docker.internal` is how Docker containers on Mac (and Windows)
